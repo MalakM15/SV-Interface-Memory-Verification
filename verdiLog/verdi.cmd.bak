@@ -1,0 +1,140 @@
+simSetSimulator "-vcssv" -exec "/home/st32/HomeWorks/hw4/simv" -args
+debImport "-dbdir" "/home/st32/HomeWorks/hw4/simv.daidir"
+debLoadSimResult /home/st32/HomeWorks/hw4/waves.fsdb
+wvCreateWindow
+verdiWindowResize -win $_Verdi_1 "190" "50" "900" "700"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "top.dut" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "top.dut" -win $_nTrace1
+srcSetScope "top.dut" -delim "." -win $_nTrace1
+srcHBSelect "top.dut" -win $_nTrace1
+srcHBSelect "top.dut_if" -win $_nTrace1
+srcSetScope "top.dut_if" -delim "." -win $_nTrace1
+srcHBSelect "top.dut_if" -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcSetScope "top" -delim "." -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcHBSelect "top.dut_if.cb" -win $_nTrace1
+srcSetScope "top.dut_if.cb" -delim "." -win $_nTrace1
+srcHBSelect "top.dut_if.cb" -win $_nTrace1
+wvCreateWindow
+srcSignalView -on
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcHBSelect "top.dut_if.tb_mp" -win $_nTrace1
+srcSetScope "top.dut_if.tb_mp" -delim "." -win $_nTrace1
+srcHBSelect "top.dut_if.tb_mp" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "top.dut_if.dut_mp" -win $_nTrace1
+srcSetScope "top.dut_if.dut_mp" -delim "." -win $_nTrace1
+srcHBSelect "top.dut_if.dut_mp" -win $_nTrace1
+srcHBSelect "top.dut_if" -win $_nTrace1
+srcSetScope "top.dut_if" -delim "." -win $_nTrace1
+srcHBSelect "top.dut_if" -win $_nTrace1
+srcHBSelect "top.dut.mif" -win $_nTrace1
+srcSetScope "top.dut.mif" -delim "." -win $_nTrace1
+srcHBSelect "top.dut.mif" -win $_nTrace1
+srcHBSelect "top.dut" -win $_nTrace1
+srcSetScope "top.dut" -delim "." -win $_nTrace1
+srcHBSelect "top.dut" -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcSetScope "top" -delim "." -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcSignalViewSelect "top.clk"
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcSignalViewSelect "top.clk"
+srcSignalViewSelect "top.clk"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+verdiSetActWin -win $_nWave3
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvOpenFile -win $_nWave3 {/home/st32/HomeWorks/hw4/waves.fsdb}
+srcSignalViewSelect "top.clk"
+verdiSetActWin -dock widgetDock_<Signal_List>
+wvAddSignal -win $_nWave3 "/top/clk"
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvSetPosition -win $_nWave3 {("G1" 1)}
+wvSetPosition -win $_nWave3 {("G1" 1)}
+srcHBSelect "top.test_prog" -win $_nTrace1
+srcSetScope "top.test_prog" -delim "." -win $_nTrace1
+srcHBSelect "top.test_prog" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "mem_pkg" -win $_nTrace1 -lib "work"
+srcSetScope "mem_pkg" -delim "." -win $_nTrace1 -lib "work"
+srcHBSelect "mem_pkg" -win $_nTrace1 -lib "work"
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcHBSelect "top.test_prog.gen_transactions" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "top.test_prog.gen_transactions" -win $_nTrace1
+srcSetScope "top.test_prog.gen_transactions" -delim "." -win $_nTrace1
+srcHBSelect "top.test_prog.gen_transactions" -win $_nTrace1
+srcHBSelect "top.test_prog.check_results" -win $_nTrace1
+srcSetScope "top.test_prog.check_results" -delim "." -win $_nTrace1
+srcHBSelect "top.test_prog.check_results" -win $_nTrace1
+srcHBSelect "top.test_prog.tb" -win $_nTrace1
+srcSetScope "top.test_prog.tb" -delim "." -win $_nTrace1
+srcHBSelect "top.test_prog.tb" -win $_nTrace1
+srcHBSelect "top.test_prog" -win $_nTrace1
+srcSetScope "top.test_prog" -delim "." -win $_nTrace1
+srcHBSelect "top.test_prog" -win $_nTrace1
+srcHBSelect "top.dut_if.cb" -win $_nTrace1
+srcSetScope "top.dut_if.cb" -delim "." -win $_nTrace1
+srcHBSelect "top.dut_if.cb" -win $_nTrace1
+verdiSetActWin -win $_nWave3
+wvSetCursor -win $_nWave3 1011321.625344
+wvSetCursor -win $_nWave3 7813898.415657
+wvSetCursor -win $_nWave3 652734.855545
+wvSetCursor -win $_nWave3 96937.741047
+srcSignalViewExpand "top.dut_if.cb.data_in\[7:0\]"
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcSignalViewCollapse "top.dut_if.cb.data_in\[7:0\]"
+srcHBSelect "top.dut_if" -win $_nTrace1
+srcSetScope "top.dut_if" -delim "." -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "top.dut_if" -win $_nTrace1
+srcHBSelect "top.dut.mif" -win $_nTrace1
+srcSetScope "top.dut.mif" -delim "." -win $_nTrace1
+srcHBSelect "top.dut.mif" -win $_nTrace1
+srcHBSelect "top.dut" -win $_nTrace1
+srcSetScope "top.dut" -delim "." -win $_nTrace1
+srcHBSelect "top.dut" -win $_nTrace1
+srcHBSelect "top.dut_if" -win $_nTrace1
+srcSetScope "top.dut_if" -delim "." -win $_nTrace1
+srcHBSelect "top.dut_if" -win $_nTrace1
+srcSignalViewSelect "top.dut_if.write"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcSignalViewSelect "top.dut_if.read"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+wvSetCursor -win $_nWave3 97869.834711 -snap {("G2" 0)}
+verdiSetActWin -win $_nWave3
+srcSignalViewSelect "top.dut_if.address\[15:0\]"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcSignalViewSelect "top.dut_if.data_in\[7:0\]"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+srcSignalViewSelect "top.dut_if.data_out\[8:0\]"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+wvSetCursor -win $_nWave3 1058392.355372 -snap {("G1" 4)}
+verdiSetActWin -win $_nWave3
+verdiSetActWin -dock widgetDock_<Signal_List>
+wvSetCursor -win $_nWave2 390675.809822
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 242929.321744
+wvSetCursor -win $_nWave2 242929.321744
+srcSignalViewSelect "top.dut_if.clk"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcSignalViewSelect "top.dut_if.write"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+srcSignalViewSelect "top.dut_if.read"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+srcSignalViewSelect "top.dut_if.address\[15:0\]"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+srcSignalViewSelect "top.dut_if.data_in\[7:0\]"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+srcSignalViewSelect "top.dut_if.data_out\[8:0\]"
+srcSignalViewAddSelectedToWave -win $_nTrace1
+wvSetCursor -win $_nWave2 245770.600361 -snap {("G1" 6)}
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 741431.655077 -snap {("G1" 0)}
+wvZoomAll -win $_nWave2
