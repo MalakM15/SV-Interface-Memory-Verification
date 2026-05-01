@@ -1,5 +1,0 @@
-{"vcs1":{"timestamp_begin":1777642470.328615281, "rt":0.13, "ut":0.08, "st":0.05}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1777642469.723561658}
-{"VCS_COMP_START_TIME": 1777642469.723561658}
-{"VCS_COMP_END_TIME": 1777642470.504926014}
-{"VCS_USER_OPTIONS": "-sverilog -timescale=1ns/1ps -debug_all +acc -l compile.log mem_if.sv my_mem.sv mem_tb_progb.sv top.sv"}
