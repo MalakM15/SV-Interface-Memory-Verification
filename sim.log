@@ -1,0 +1,154 @@
+Command: /home/st32/HomeWorks/hw4/./simv -l sim.log
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP2_Full64; Runtime version T-2022.06-SP2_Full64;  May  1 20:19 2026
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06-SP2, Linux x86_64/64bit, 11/22/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'waves.fsdb'
+*Verdi* : Begin traversing the scope (top), layer (0).
+*Verdi* : End of traversing.
+
+[GEN] ===== Starting transaction generation =====
+[GEN]  Time=150000 | addr=0x3328  data_in=0xa9  expected=0b010101001
+[GEN]  Time=150000 | addr=0x6ddf  data_in=0xb8  expected=0b010111000
+[GEN]  Time=150000 | addr=0xfcb8  data_in=0xee  expected=0b011101110
+[GEN]  Time=150000 | addr=0xe011  data_in=0xaa  expected=0b010101010
+[GEN]  Time=150000 | addr=0xb45c  data_in=0xab  expected=0b110101011
+[GEN]  Time=150000 | addr=0x4222  data_in=0xb4  expected=0b010110100
+[GEN]  Time=150000 | addr=0x0d47  data_in=0xf9  expected=0b011111001
+[GEN]  Time=150000 | addr=0x7119  data_in=0x1f  expected=0b100011111
+[GEN]  Time=150000 | addr=0xc3c2  data_in=0xf6  expected=0b011110110
+[GEN]  Time=150000 | addr=0xccd1  data_in=0x1f  expected=0b100011111
+[GEN]  Time=150000 | addr=0xe2d2  data_in=0xf5  expected=0b011110101
+[GEN]  Time=150000 | addr=0x402e  data_in=0x55  expected=0b001010101
+[GEN]  Time=150000 | addr=0xc2c5  data_in=0x2b  expected=0b000101011
+[GEN]  Time=150000 | addr=0xc8ee  data_in=0x13  expected=0b100010011
+[GEN]  Time=150000 | addr=0xc439  data_in=0x7d  expected=0b001111101
+[GEN]  Time=150000 | addr=0x6224  data_in=0x5f  expected=0b001011111
+[GEN]  Time=150000 | addr=0x5ca2  data_in=0x96  expected=0b010010110
+[GEN]  Time=150000 | addr=0x6150  data_in=0x99  expected=0b010011001
+[GEN]  Time=150000 | addr=0x4700  data_in=0x19  expected=0b100011001
+[GEN]  Time=150000 | addr=0x5c88  data_in=0xcb  expected=0b111001011
+[GEN] ===== Generation complete: 20 transactions =====
+
+[DRV] ===== Starting drive task =====
+[MON] ===== Starting monitor task =====
+[CHK] ===== Starting checker task =====
+[DRV]  WRITE: Time=250000 | addr=0x3328  data_in=0xa9
+[DRV]  READ:  Time=450000 | addr=0x3328
+[DRV]  WRITE: Time=650000 | addr=0x6ddf  data_in=0xb8
+[MON]  Time=650000 | addr=0x3328  data_out=0b010101001
+[TRANSACTION] Time=650000 | data_out = 0b010101001  (parity=0, data=0xa9)
+[PASS]  Time=650000 | MATCH:    expected=0b010101001  got=0b010101001
+[DRV]  READ:  Time=850000 | addr=0x6ddf
+[DRV]  WRITE: Time=1050000 | addr=0xfcb8  data_in=0xee
+[MON]  Time=1050000 | addr=0x6ddf  data_out=0b010111000
+[TRANSACTION] Time=1050000 | data_out = 0b010111000  (parity=0, data=0xb8)
+[PASS]  Time=1050000 | MATCH:    expected=0b010111000  got=0b010111000
+[DRV]  READ:  Time=1250000 | addr=0xfcb8
+[DRV]  WRITE: Time=1450000 | addr=0xe011  data_in=0xaa
+[MON]  Time=1450000 | addr=0xfcb8  data_out=0b011101110
+[TRANSACTION] Time=1450000 | data_out = 0b011101110  (parity=0, data=0xee)
+[PASS]  Time=1450000 | MATCH:    expected=0b011101110  got=0b011101110
+[DRV]  READ:  Time=1650000 | addr=0xe011
+[DRV]  WRITE: Time=1850000 | addr=0xb45c  data_in=0xab
+[MON]  Time=1850000 | addr=0xe011  data_out=0b010101010
+[TRANSACTION] Time=1850000 | data_out = 0b010101010  (parity=0, data=0xaa)
+[PASS]  Time=1850000 | MATCH:    expected=0b010101010  got=0b010101010
+[DRV]  READ:  Time=2050000 | addr=0xb45c
+[DRV]  WRITE: Time=2250000 | addr=0x4222  data_in=0xb4
+[MON]  Time=2250000 | addr=0xb45c  data_out=0b110101011
+[TRANSACTION] Time=2250000 | data_out = 0b110101011  (parity=1, data=0xab)
+[PASS]  Time=2250000 | MATCH:    expected=0b110101011  got=0b110101011
+[DRV]  READ:  Time=2450000 | addr=0x4222
+[DRV]  WRITE: Time=2650000 | addr=0x0d47  data_in=0xf9
+[MON]  Time=2650000 | addr=0x4222  data_out=0b010110100
+[TRANSACTION] Time=2650000 | data_out = 0b010110100  (parity=0, data=0xb4)
+[PASS]  Time=2650000 | MATCH:    expected=0b010110100  got=0b010110100
+[DRV]  READ:  Time=2850000 | addr=0x0d47
+[DRV]  WRITE: Time=3050000 | addr=0x7119  data_in=0x1f
+[MON]  Time=3050000 | addr=0x0d47  data_out=0b011111001
+[TRANSACTION] Time=3050000 | data_out = 0b011111001  (parity=0, data=0xf9)
+[PASS]  Time=3050000 | MATCH:    expected=0b011111001  got=0b011111001
+[DRV]  READ:  Time=3250000 | addr=0x7119
+[DRV]  WRITE: Time=3450000 | addr=0xc3c2  data_in=0xf6
+[MON]  Time=3450000 | addr=0x7119  data_out=0b100011111
+[TRANSACTION] Time=3450000 | data_out = 0b100011111  (parity=1, data=0x1f)
+[PASS]  Time=3450000 | MATCH:    expected=0b100011111  got=0b100011111
+[DRV]  READ:  Time=3650000 | addr=0xc3c2
+[DRV]  WRITE: Time=3850000 | addr=0xccd1  data_in=0x1f
+[MON]  Time=3850000 | addr=0xc3c2  data_out=0b011110110
+[TRANSACTION] Time=3850000 | data_out = 0b011110110  (parity=0, data=0xf6)
+[PASS]  Time=3850000 | MATCH:    expected=0b011110110  got=0b011110110
+[DRV]  READ:  Time=4050000 | addr=0xccd1
+[DRV]  WRITE: Time=4250000 | addr=0xe2d2  data_in=0xf5
+[MON]  Time=4250000 | addr=0xccd1  data_out=0b100011111
+[TRANSACTION] Time=4250000 | data_out = 0b100011111  (parity=1, data=0x1f)
+[PASS]  Time=4250000 | MATCH:    expected=0b100011111  got=0b100011111
+[DRV]  READ:  Time=4450000 | addr=0xe2d2
+[DRV]  WRITE: Time=4650000 | addr=0x402e  data_in=0x55
+[MON]  Time=4650000 | addr=0xe2d2  data_out=0b011110101
+[TRANSACTION] Time=4650000 | data_out = 0b011110101  (parity=0, data=0xf5)
+[PASS]  Time=4650000 | MATCH:    expected=0b011110101  got=0b011110101
+[DRV]  READ:  Time=4850000 | addr=0x402e
+[DRV]  WRITE: Time=5050000 | addr=0xc2c5  data_in=0x2b
+[MON]  Time=5050000 | addr=0x402e  data_out=0b001010101
+[TRANSACTION] Time=5050000 | data_out = 0b001010101  (parity=0, data=0x55)
+[PASS]  Time=5050000 | MATCH:    expected=0b001010101  got=0b001010101
+[DRV]  READ:  Time=5250000 | addr=0xc2c5
+[DRV]  WRITE: Time=5450000 | addr=0xc8ee  data_in=0x13
+[MON]  Time=5450000 | addr=0xc2c5  data_out=0b000101011
+[TRANSACTION] Time=5450000 | data_out = 0b000101011  (parity=0, data=0x2b)
+[PASS]  Time=5450000 | MATCH:    expected=0b000101011  got=0b000101011
+[DRV]  READ:  Time=5650000 | addr=0xc8ee
+[DRV]  WRITE: Time=5850000 | addr=0xc439  data_in=0x7d
+[MON]  Time=5850000 | addr=0xc8ee  data_out=0b100010011
+[TRANSACTION] Time=5850000 | data_out = 0b100010011  (parity=1, data=0x13)
+[PASS]  Time=5850000 | MATCH:    expected=0b100010011  got=0b100010011
+[DRV]  READ:  Time=6050000 | addr=0xc439
+[DRV]  WRITE: Time=6250000 | addr=0x6224  data_in=0x5f
+[MON]  Time=6250000 | addr=0xc439  data_out=0b001111101
+[TRANSACTION] Time=6250000 | data_out = 0b001111101  (parity=0, data=0x7d)
+[PASS]  Time=6250000 | MATCH:    expected=0b001111101  got=0b001111101
+[DRV]  READ:  Time=6450000 | addr=0x6224
+[DRV]  WRITE: Time=6650000 | addr=0x5ca2  data_in=0x96
+[MON]  Time=6650000 | addr=0x6224  data_out=0b001011111
+[TRANSACTION] Time=6650000 | data_out = 0b001011111  (parity=0, data=0x5f)
+[PASS]  Time=6650000 | MATCH:    expected=0b001011111  got=0b001011111
+[DRV]  READ:  Time=6850000 | addr=0x5ca2
+[DRV]  WRITE: Time=7050000 | addr=0x6150  data_in=0x99
+[MON]  Time=7050000 | addr=0x5ca2  data_out=0b010010110
+[TRANSACTION] Time=7050000 | data_out = 0b010010110  (parity=0, data=0x96)
+[PASS]  Time=7050000 | MATCH:    expected=0b010010110  got=0b010010110
+[DRV]  READ:  Time=7250000 | addr=0x6150
+[DRV]  WRITE: Time=7450000 | addr=0x4700  data_in=0x19
+[MON]  Time=7450000 | addr=0x6150  data_out=0b010011001
+[TRANSACTION] Time=7450000 | data_out = 0b010011001  (parity=0, data=0x99)
+[PASS]  Time=7450000 | MATCH:    expected=0b010011001  got=0b010011001
+[DRV]  READ:  Time=7650000 | addr=0x4700
+[CHK] ===== Checker task complete =====
+[TRANSACTION] Time=7750000 | Total Errors = 0
+[DRV]  WRITE: Time=7850000 | addr=0x5c88  data_in=0xcb
+[MON]  Time=7850000 | addr=0x4700  data_out=0b100011001
+[TRANSACTION] Time=7850000 | data_out = 0b100011001  (parity=1, data=0x19)
+[MON] ===== Monitor task complete =====
+
+[DRV]  READ:  Time=8050000 | addr=0x5c88
+[DRV] ===== Drive task complete =====
+
+
+[TEST] ===== Running additional directed / corner-case tests =====
+[TEST] addr=0xFFFF data=0x00 expected=0b000000000 got=0b000000000  PASS
+[TEST] addr=0x0001 data=0xFF expected=0b011111111 got=0b011111111  PASS
+[TEST] addr=0x0002 data=0x01 expected=0b100000001 got=0b100000001  PASS
+
+[SIM] ===== Simulation complete =====
+[TRANSACTION] Time=10050000 | Total Errors = 0
+$finish called from file "mem_tb_progb.sv", line 232.
+$finish at simulation time             10050000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10050000 ps
+CPU Time:      0.360 seconds;       Data structure size:   0.0Mb
+Fri May  1 20:19:57 2026
